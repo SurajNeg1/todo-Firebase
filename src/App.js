@@ -36,13 +36,12 @@ function App() {
   return (
     <div className="app">
         <h1>ToDO List</h1>
-
-        <form className="app__form">
+        <form>
           <FormControl>
-            <InputLabel >Write a Todo</InputLabel>
-            <Input type="text" value={input} 
+            <InputLabel >Write Here...</InputLabel>
+            <Input  type="text" value={input} 
                   onChange={(e)=>setInput(e.target.value)} />
-          </FormControl>
+          </FormControl> 
           <Button type="submit" onClick={addTodo} variant="contained" color="primary" disabled={!input}>
                 Add Todo
           </Button>
